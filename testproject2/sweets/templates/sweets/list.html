@@ -1,0 +1,71 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div id="container">
+  <main>
+    <section>
+      <h2>ケーキ一覧<span>ジャンル別ケーキ一覧</span></h2>
+      <div class="list-container2">
+        <div class="list_2s">
+          <div class="list">
+            <figure><a href="{% url 'syoto_sweets' %}"><img src="{% static 'sweets/image/sample/IMG_8627.jpg' %}" alt=""></a></figure>
+            <div class="text">
+              <h4><a href="{% url 'syoto_sweets' %}">ショートケーキ</a></h4>
+              <p>ショートケーキは、一般的には軽くてサクサクした生地を使用し、生クリームとフルーツで構成されるケーキのことです。</p>
+            </div> <span class="icon"></span> </div>
+          <div class="list">
+            <figure><a href="{% url 'sfon_sweets' %}"><img src="{% static 'sweets/image/sample/IMG_8625.JPG' %}" alt=""></a></figure>
+            <div class="text">
+              <h4><a href="{% url 'sfon_sweets' %}">シフォンケーキ</a></h4>
+              <p>シフォンケーキは、軽くてもちもちとした食感を持ち、空気をたっぷり含んだふんわりとしたケーキのことです。</p>
+            </div> <span class="icon"></span> </div>
+          <div class="list">
+            <figure><a href="{% url 'mon_sweets' %}"><img src="{% static 'sweets/image/sample/IMG_8626.jpg' %}" alt=""></a></figure>
+            <div class="text">
+              <h4><a href="{% url 'mon_sweets' %}">モンブラン</a></h4>
+              <p>モンブランは、フランス発祥の伝統的なデザートで、栗のペーストを使った山の頂上に雪をかぶったように見えるケーキのことです。</p>
+            </div> <span class="icon"></span> </div>
+            
+          <div class="list">
+            <figure><a href="{% url 'choko_sweets' %}"><img src="{% static 'sweets/image/sample/IMG_8628.jpg' %}" alt=""></a></figure>
+            <div class="text">
+              <h4><a href="{% url 'choko_sweets' %}">チョコケーキ</a></h4>
+              <p>チョコケーキは、主成分としてチョコレートを使用した、甘さたっぷりのものからビターなものまであるケーキのことです。</p>
+            </div> <span class="icon"></span> </div>
+        </div>
+        <div class="list_1s">
+          <div class="list">
+            <figure><a href="{% url 'cz_sweets' %}"><img src="{% static 'sweets/image/sample/IMG_8629.JPG' %}" alt=""></a></figure>
+            <div class="text">
+              <h4><a href="{% url 'cz_sweets' %}">チーズケーキ</a></h4>
+              <p>チーズケーキは、主成分としてクリームチーズを使用したケーキのことです。ベイクドやレアなど様々な種類があります。</p>
+            </div> <span class="icon"></span> </div>
+          <div class="list">
+            <figure><a href="{% url 'bs_sweets' %}"><img src="{% static 'sweets/image/sample/IMG_8631.jpg' %}" alt=""></a></figure>
+            <div class="text">
+              <h4><a href="{% url 'bs_sweets' %}">誕生日ケーキ</a></h4>
+              <p>誕生日ケーキは、誕生日を祝う際に用いられる特別なケーキのことです。誕生日のお祝いや祝賀の一環として、誕生日の対象者に贈られます。</p>
+            </div> <span class="icon"></span> </div>
+          <div class="list">
+            <figure><a href="{% url 'cap_sweets' %}"><img src="{% static 'sweets/image/sample/cap2.png' %}" alt=""></a></figure>
+            <div class="text">
+              <h4><a href="{% url 'cap_sweets' %}">カップケーキ</a></h4>
+              <p>カップケーキは、小さなサイズのケーキで、通常は紙製のカップに入れて焼かれ、個別に提供されることが特徴のケーキです。</p>
+            </div> <span class="icon"></span> </div>
+          <div class="list">
+            <figure><a href="{% url 'huru_sweets' %}"><img src="{% static 'sweets/image/sample/IMG_8633.jpg' %}" alt=""></a></figure>
+            <div class="text">
+              <h4><a href="{% url 'huru_sweets' %}">フルーツケーキ</a></h4>
+              <p>フルーツケーキは、主にドライフルーツや新鮮なフルーツを主成分として含むケーキの一種です。。</p>
+            </div> <span class="icon"></span> </div>
+        </div>
+      </div>
+      <!--/.list-container-->
+      <h3>
+        ケーキについて
+      </h3>
+      <p>各ケーキごとについて詳しく知ることができます。<br> 美味しいから、見た目が可愛いからだけでケーキを選んでいた<br>そんな経験ありませんか？</p>
+      <p>ケーキの魅力を詳しく知ることによって、さらに美味しく食べることができます。<br> 
+    </section>
+  </main>
+
+
+{% endblock %}

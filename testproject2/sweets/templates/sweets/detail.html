@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>料理レシピサイト tp_recipe1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="stylesheet" type="text/css" href="{% static 'sweets/css/style.css' %}">
+
+</head>
+
+
+<body>
+
+<header>
+<h1 id="logo"><a href="{% url 'index_sweets' %}"><img src="{% static 'sweets/image/rogo5.png' %}" alt="Sample Recipe Site"></a></h1>
+
+</header>
+
+<div class="wrapper">
+    <div class="container">
+        <div class="left">
+            <ul class="people">
+                <li class="person" data-chat="person1">
+                    <img src="{% static 'sweets/image/icons/1.png' %}" alt="" />
+                    <span class="name">シフォンケーキ</span>
+                    <span class="time">2:09 PM</span>
+                    <span class="preview">シフォンケーキってなんで穴空いてるんだろう</span>
+                </li>
+                <li class="person" data-chat="person2">
+                    <img src="{% static 'sweets/image/icons/2.png' %}" alt="" />
+                    <span class="name">チーズケーキ</span>
+                    <span class="time">1:44 PM</span>
+                    <span class="preview">チーズケーキもいいけどレアの方もいいよね</span>
+                </li>
+                <li class="person" data-chat="person3">
+                    <img src="{% static 'sweets/image/icons/3.png' %}" alt="" />
+                    <span class="name">チョコケーキ</span>
+                    <span class="time">2:09 PM</span>
+                    <span class="preview">フォンダンショコラってチョコケーキなんかな</span>
+                </li>
+                <li class="person" data-chat="person4">
+                    <img src="{% static 'sweets/image/icons/4.png' %}" alt="" />
+                    <span class="name">モンブラン</span>
+                    <span class="time">2:09 PM</span>
+                    <span class="preview">最近目の前でモンブランを作ってくれるお店多いよね</span>
+                </li>
+                <li class="person" data-chat="person5">
+                    <img src="{% static 'sweets/image/icons/5.png' %}" alt="" />
+                    <span class="name">ショートケーキ</span>
+                    <span class="time">2:09 PM</span>
+                    <span class="preview">いちご高くない？</span>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="top"><span>To: <span class="name">Dog Woofson</span></span></div>
+            <div class="chat" data-chat="person1">
+                <div class="conversation-start">
+                    <span>Today, 6:48 AM</span>
+                </div>
+                <div class="bubble you you1">
+                    シフォンケーキってなんで穴空いてるんだろう
+                </div>
+                <div class="bubble you you2">
+                    それ思った
+                </div>
+                <div class="bubble you you3">
+                    火の通りにくい中心部分までしっかり火を通すための工夫らしいよ
+                </div>
+            </div>
+            <div class="chat" data-chat="person2">
+                <div class="conversation-start">
+                    <span>Today, 5:38 PM</span>
+                </div>
+                <div class="bubble you you4">
+                    チーズケーキもいいけどレアの方もいいよね
+                </div>
+                <div class="bubble you you5">
+                    わかる
+                </div>
+                <div class="bubble me">
+                    レアのさっぱり感が好き
+                </div>
+                <div class="bubble me">
+                    みんなはどっち派？
+                </div>
+                <div class="bubble you you6">
+                    やっぱノーマルのチーズケーキで
+                </div>
+                <div class="bubble you you7">
+                    同じく
+                </div>
+            </div>
+            <div class="chat" data-chat="person3">
+                <div class="conversation-start">
+                    <span>Today, 3:38 AM</span>
+                </div>
+                <div class="bubble you you8">
+                    フォンダンショコラってチョコケーキなんかな
+                </div>
+                <div class="bubble you you9">
+                    それ微妙なラインじゃん
+                </div>
+                <div class="bubble me">
+                    まずフォンダンショコラって何？
+                </div>
+                <div class="bubble me">
+                    初めて聞いた
+                </div>
+                <div class="bubble you you10">
+                    調べて食べてみて
+                </div>
+                <div class="bubble you you8">
+                    飛ぶぞ
+                </div>
+                <div class="bubble you you7">
+                    あったかいのが特に美味しいですよ
+                </div>
+            </div>
+            <div class="chat" data-chat="person4">
+                <div class="conversation-start">
+                    <span>Yesterday, 4:20 PM</span>
+                </div>
+                <div class="bubble me">
+                    最近目の前でモンブランを作ってくれるお店多いよね
+                </div>
+                <div class="bubble me">
+                    いってみたいけど高そう
+                </div>
+                <div class="bubble you you7">
+                    生搾りだもんねそりゃ高いよ
+                </div>
+                <div class="bubble you you5">
+                    やっぱ昔から通っているケーキ屋のモンブランが一番
+                </div>
+                <div class="bubble me you3">
+                    確かに
+                </div>
+                <div class="bubble me you2">
+                    なんかモンブラン食べたくなってきた
+                </div>
+            </div>
+            <div class="chat" data-chat="person5">
+                <div class="conversation-start">
+                    <span>Today, 6:28 AM</span>
+                </div>
+                <div class="bubble you you3">
+                    いちご高くない？
+                </div>
+                <div class="bubble you you5">
+                    わかる　ケーキの値段にも影響出る
+                </div>
+                <div class="bubble you you1">
+                    けどやっぱ美味しいんだよね
+                </div>
+            </div>
+            <div class="write">
+                <a href="javascript:;" class="write-link attach"></a>
+                <input type="text" id="content" />
+                <a href="javascript:;" class="write-link smiley"></a>
+                <a href="javascript:;" class="write-link send" id="send"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.chat[data-chat=person2]').classList.add('active-chat')
+    document.querySelector('.person[data-chat=person2]').classList.add('active')
+    let activeChat = 2;
+
+    let friends = {
+        list: document.querySelector('ul.people'),
+        all: document.querySelectorAll('.left .person'),
+        name: ''
+    },
+    chat = {
+        container: document.querySelector('.container .right'),
+        current: null,
+        person: null,
+        name: document.querySelector('.container .right .top .name')
+    }
+
+    friends.all.forEach(f => {
+    f.addEventListener('mousedown', () => {
+        f.classList.contains('active') || setAciveChat(f)
+    })
+    });
+
+    function setAciveChat(f) {
+        friends.list.querySelector('.active').classList.remove('active')
+        f.classList.add('active')
+        chat.current = chat.container.querySelector('.active-chat')
+        chat.person = f.getAttribute('data-chat')
+        chat.current.classList.remove('active-chat')
+        chat.container.querySelector('[data-chat="' + chat.person + '"]').classList.add('active-chat')
+        friends.name = f.querySelector('.name').innerText
+        chat.name.innerHTML = friends.name
+        activeChat = chat.person;
+    }
+
+    document.getElementById("send").addEventListener("click", function(e){
+        const c = document.getElementById("content").value;
+        console.log(c);
+        // 新しい<div>要素を作成
+        var newDiv = document.createElement("div");
+
+        // クラス名を追加
+        newDiv.classList.add("bubble", "me");
+
+        // テキストコンテンツを設定
+        var newText = document.createTextNode(c);
+        newDiv.appendChild(newText);
+
+        // 作成した<div>要素をbodyに追加
+        document.getElementById("content").value = "";
+        document.getElementsByClassName("active-chat")[0].appendChild(newDiv);
+    });
+</script>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="{% static 'sweets/js/main.js' %}"></script>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'sweets/js/slick.js' %}"></script>
+
+</body>
+</html>

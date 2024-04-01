@@ -1,0 +1,80 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>料理レシピサイト tp_recipe1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ここにサイト説明を入れます">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="{% static 'sweets/css/style.css' %}"> </head>
+<body>
+  
+  <!--スライドショー（slick）-->
+  <aside id="mainimg">
+    <div class="mainimg">
+      <div><img src="{% static 'sweets/image/food.jpg' %}" alt=""></div>
+      <div><img src="{% static 'sweets/image/foods.JPG' %}" alt=""></div>
+      <div><img src="{% static 'sweets/image/title.jpg' %}" alt=""></div>
+      </div> <img src="{% static 'sweets/image/zisaku.PNG' %}" alt="" class="kazari"> </aside>
+  <div id="container">
+    <main>
+      <section>
+        <h2>一覧<span>summary</span></h2>
+        <div class="list-container">
+          <div class="list">
+            <figure><a href="{% url 'list_sweets' %}"><img src="{% static 'sweets/image/iii.png' %}" alt=""></a></figure>
+            <div class="text">
+              <h4><a href="{% url 'list_sweets' %}">ケーキ一覧</a></h4>
+              <p>種類ごとにケーキを記載しており、ケーキについて詳しく知ることができます。</p>
+            </div><span class="icon"></span> </div>
+          <div class="list">
+            <figure><a href="{% url 'tenpo_sweets' %}"><img src="{% static 'sweets/image/onnna.png' %}" alt=""></a></figure>
+            <div class="text">
+              <h4><a href="{% url 'tenpo_sweets' %}">店舗一覧</a></h4>
+              <p>有名なケーキ屋を記載しております。ぜひお好みに合ったケーキ屋を見つけてみてください。</p>
+            </div><span class="icon"></span> </div>
+          <div class="list">
+            <figure><a href="{% url 'detail_sweets' id=1 %} "><img src="{% static 'sweets/image/sample/zisaku1.png' %}" alt=""></a></figure>
+            <div class="text">
+              <h4><a href="{% url 'detail_sweets' id=1 %}">掲示板</a></h4>
+              <p>匿名でケーキについて語り合えます。ユーザー同士の交流の場にもぜひ。（開発中）</p>
+            </div><span class="icon"></span> </div>
+        </div>
+        <!--/.list-container-->
+      </section>
+      <section>
+        <h2>いつものケーキで満足していませんか？</h2>
+        <dl id="new"> いつもと同じケーキ屋　いつもと同じカフェで満足しきっていませんか？<br> あなたのケーキへの価値観を変える<br> そんなケーキたちを紹介していきます<br> 運命のケーキに出会って<br> 美味しい笑顔になれるように </dl>
+      </section>
+      <section>
+        <h2>検索<span>search</span></h2>
+        <h3>ここからネット検索ができます</h3>  
+        <script async src="https://cse.google.com/cse.js?cx=82c4efc0231514ab7">
+        </script>
+        <div class="gcse-search"></div>
+        <p><strong class="color-check">ここからネット検索ができます</strong><br> ご自由にお使いください</p>
+
+      <section>
+        <h2>使用したイラストのご紹介</h2>
+        <p><a href="https://www.irasutoya.com/" target="_blank"></a>当サイトで使用されているイラストは、「いらすとや」様のフリー素材を使っています。<br> 下記から公式サイトを閲覧することができます。</p>
+        <p>▼かわいいフリー素材集 いらすとや<br> <a href="https://www.irasutoya.com/" target="_blank">
+            <img src="{% static 'sweets/image/irasutoya.jpg' %}" alt="">
+        </a> </section>
+    </main>
+    <!--開閉ブロック-->
+    <div id="menubar">
+      <h3><a href="{% url 'list_sweets' %}">ケーキ一覧</a></h3>
+      <h3><a href="{% url 'tenpo_sweets' %}">店舗一覧</a></h3>
+      <h3><a href="{% url 'detail_sweets' id=1 %}">掲示板</a></h3>
+    
+    </div>
+    <!--/#menubar-->
+  </div>
+  <!--/#container-->
+  
+
+  
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>料理レシピサイト tp_recipe1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ここにサイト説明を入れます">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="{% static 'sweets/css/style.css' %}"> </head>
+<body>
+  <header>
+    <h1 id="logo"><a href="{% url 'index_sweets' %}"><img src="{% static 'sweets/image/rogo5.png' %}" alt="Sample Recipe Site"></a></h1>
+  </header>
+  <main>
+    <section>
+      <h2>シフォンケーキ</h2>
+      <figure><a href="{% url 'list_sweets' %}"><img src="{% static 'sweets/image/icons/1.png' %}" alt=""></a></figure>
+      <p>1927年にアメリカ合衆国カリフォルニア州ロサンゼルスの一介の保険外交員で料理愛好家、ハリー・ベーカー（Harry Baker、1884年 - 1974年）によって、<br>卵白のみを用いて作るエンジェルフードケーキ（英語版）を元に考案され、<br>食感が絹織物のシフォンのように軽いことから名付けられた</p>
+    </section>
+  </main>
+  <footer> <small>Copyright&copy; <a href="index.html">Sample Recipe Site</a> All Rights Reserved.</small> <span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span> </footer>
+  <!--開閉ボタン（ハンバーガーアイコン）-->
+  <div id="menubar_hdr"> <span></span><span></span><span></span> </div>
+  <!--jQueryの読み込み-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!--このテンプレート専用のスクリプト-->
+  <script src="{% static 'sweets/js/main.js' %}"></script>
+  <!--ページの上部へ戻るボタン-->
+  <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+  <!--スライドショー（slick）-->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="{% static 'sweets/js/slick.js' %}"></script>
