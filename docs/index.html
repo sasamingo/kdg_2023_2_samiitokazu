@@ -1,1 +1,106 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div id="container">
+    <main>
+    <section>
+    <h2>店舗一覧
+        <span>有名なケーキ屋紹介</span>
+    </h2>
+<div class="list-container1">
+<div class="list_1s">
+<div class="list">
+<figure><a href="https://www.fujiya-peko.co.jp/"><img src="{% static 'sweets/image/sample/fujiya.png' %}" alt=""></a></figure>
+<div class="text">
+<h4><a href="https://www.fujiya-peko.co.jp/">不二家</a></h4>
 
+<p>ペコちゃんで有名な不二家。レストランも展開しています。</p>
+</div>
+<span class="icon"></span>
+</div>
+
+<div class="list">
+<figure><a href="https://www.morozoff.co.jp/"><img src="{% static 'sweets/image/sample/mozo.png' %}" alt=""></a></figure>
+<div class="text">
+<h4><a href="https://www.morozoff.co.jp/">モロゾフ</a></h4>
+<p>高級なチョコレートや洋菓子で知られており、ケーキ以外にもプリンも有名です。</p>
+</div>
+<span class="icon"></span>
+</div>
+
+<div class="list">
+<figure><a href="https://www.juchheim.co.jp/"><img src="{% static 'sweets/image/sample/m.png' %}" alt=""></a></figure>
+<div class="text">
+<h4><a href="https://www.juchheim.co.jp/">ユーハイム</a></h4>
+<p>ショートケーキや焼き菓子が有名であり、進物で使われる商品が多い。</p>
+</div>
+<span class="icon"></span>
+</div>
+
+<div class="list">
+<figure><a href="https://www.ginza-west.com/"><img src="{% static 'sweets/image/sample/uest.png' %}" alt=""></a></figure>
+<div class="text">
+<h4><a href="https://www.ginza-west.com/">銀座ウエスト</a></h4>
+<p>主にドライケーキやパイ、クッキーなどが有名です。</p>
+</div>
+<span class="icon"></span>
+</div>
+</div>
+<div class="list_2s">
+<div class="list">
+<figure><a href="https://www.pierreherme.co.jp/"><img src="{% static 'sweets/image/sample/pari.png' %}" alt=""></a></figure>
+<div class="text">
+<h4><a href="https://www.pierreherme.co.jp/">ピエールエルメパリ</a></h4>
+<p>ピエール・エルメは、フランスの有名なパティシエおよびショコラティエです。</p>
+</div>
+<span class="icon"></span>
+</div>
+
+<div class="list">
+<figure><a href="https://www.harbs.co.jp/"><img src="{% static 'sweets/image/sample/haebs.png' %}" alt=""></a></figure>
+<div class="text">
+<h4><a href="https://www.harbs.co.jp/">ハーブス</a></h4>
+<p>全国に店舗を展開するフレッシュケーキ＆カフェブランドです。</p>
+</div>
+<span class="icon"></span>
+</div>
+
+<div class="list">
+<figure><a href="https://kajitsuen.jp/"><img src="{% static 'sweets/image/sample/riveru.png' %}" alt=""></a></figure>
+<div class="text">
+<h4><a href="https://kajitsuen.jp/">果樹園リーベル</a></h4>
+<p>高級フルーツを使ったサイズが大きいことで有名です。</p>
+</div>
+<span class="icon"></span>
+</div>
+
+<div class="list">
+<figure><a href="https://www.antenor.jp/"><img src="{% static 'sweets/image/sample/ant.png' %}" alt=""></a></figure>
+<div class="text">
+<h4><a href="https://www.antenor.jp/">アンテノール</a></h4>
+<p>店名は争いをもたずに平和を導いたギリシャ神話の知将の名から付けられた</p>
+</div>
+</div>
+</div>
+
+</div>
+<!--/.list-container-->
+
+<h3>記載している店舗について</h3>
+<p>複数店舗を構え、人気のあるお勧めの店舗を記載しました<br>
+タップで公式サイトに飛べるので、気になる店舗があったらご覧ください<br>
+店名、ロゴ、どちらからも公式サイトに飛ぶことができます</p>
+
+
+    
+<section>
+    <h2>検索<span>search</span></h2> 
+    <script async src="https://cse.google.com/cse.js?cx=82c4efc0231514ab7">
+    </script>
+    <div class="gcse-search"></div>
+    <p><strong class="color-check">ここからネット検索ができます</strong><br> ご自由にお使いください</p>
+
+
+
+</section>
+
+</main>
+{% endblock %}
